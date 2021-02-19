@@ -1,0 +1,112 @@
+@media only screen and (max-width: 600px) {
+
+  /* header */
+  .email,
+  .topbar-num {
+    display: none;
+  }
+
+
+  .logo-principale {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+  }
+
+  .header-logo {
+
+    height: 50%;
+    width: 75%;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 55%;
+    justify-content: center;
+  }
+
+  .menu div {
+    margin-bottom: 10px;
+  }
+
+  /* End header */
+  /* content */
+
+  .formulaire-contact input {
+    width: 70%;
+    height: 30px;
+    margin-bottom: 20px;
+
+
+  }
+
+  #contact-message {
+    width: 80%;
+  }
+
+
+  #contact-envoyer {
+    width: 200px;
+
+  }
+
+  /*  */
+
+  .modal-box {
+
+    width: 50%;
+
+
+  }
+
+  /* guid */
+  .guide div {
+    height: 330px;
+    width: 80%;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-bottom: 40px;
+    margin-right: 0;
+
+  }
+
+
+  /* End guid */
+
+
+
+  /* footer */
+  .footer-left {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .footer-right a {
+    margin-top: 25px;
+  }
+
+
+  /* End footer */
+}

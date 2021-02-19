@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+
+    /* header */
+    .email,
+    .topbar-num {
+        display: none;
+    }
+
+
+    .logo-principale {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+    }
+
+    .header-logo {
+
+        height: 50%;
+        width: 75%;
+    }
+
+    .header {
+        height: 150px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        width: 55%;
+        justify-content: center;
+    }
+
+    .menu div {
+        margin-bottom: 10px;
+    }
+
+    /* End header */
+
+    .background1 {
+        height: 200px;
+        width: 100%;
+
+    }
+
+    .background1 img {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+
+    .title {
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+    .title-service {
+        text-align: center;
+        line-height: 1.3;
+    }
+
+
+    .div-h {
+        transform: translate(-10%, -50%);
+    }
+
+
+
+    .services div {
+        width: 80%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* review */
+
+    .review div {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* end review */
+    /* footer */
+    .footer-left {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .footer-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer-right a {
+        margin-top: 25px;
+    }
+
+
+    /* End footer */
+}

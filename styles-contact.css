@@ -1,0 +1,310 @@
+body {
+    font-family: poppins;
+    margin: 0;
+}
+
+/* header */
+.header-principale {
+    font-size: 12px;
+    font-family: Poppins;
+}
+
+.topbar {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    background: var(--main-color, #1A2B48);
+    box-sizing: border-box;
+}
+
+
+
+.email a:hover,
+.listes-right a:hover,
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.listes-social {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.listes-social img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.topbar-lift {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.listes-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listes-right a {
+    color: white;
+    margin-left: 40px;
+}
+
+.header a,
+.email a,
+.listes-right a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.listes-right li,
+.email li,
+.listes-social li {
+
+    list-style: none;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    font-size: 17px;
+    padding: 5px 25px 0px 25px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo-principale {
+    height: 100%;
+    width: 25%;
+}
+
+.header-logo {
+    height: 100%;
+    width: 80%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.menu div {
+    color: black;
+    margin-left: 10%;
+}
+
+/* End Header */
+
+/* content */
+.navbar-contact {
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    padding-left: 5%;
+}
+
+
+/* localisation */
+
+.localisation {
+    height: 300px;
+    width: 100%;
+}
+
+.localisation iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* contact */
+
+.title-contact {
+    text-align: center;
+
+}
+
+
+
+.formulaire-contact input {
+    width: 30%;
+    height: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+#contact-message {
+    width: 40%;
+}
+
+.formulaire-contact li {
+    list-style: none;
+}
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+#contact-envoyer {
+
+    border-radius: 20px;
+    background-color: #3d5581;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* guid */
+.guide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 30px 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.guide img {
+    height: 70px;
+    width: 70px;
+
+}
+
+
+.guide div {
+    height: 300px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+/* modal */
+/*  */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: #1A2B48;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* end modal */
+
+
+
+/* End contact */
+
+/* footer */
+.footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #1A2B48;
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+
+.footer-left {
+
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 40%;
+    height: 100px;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 70%;
+}
+
+
+
+.footer-right a {
+    color: white;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+.listes-social2 a {
+    padding-right: 10px;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 35px;
+}
+
+/* End footer */

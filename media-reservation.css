@@ -1,0 +1,93 @@
+@media only screen and (max-width: 600px) {
+
+  /* header */
+  .email,
+  .topbar-num {
+    display: none;
+  }
+
+
+
+  .logo-principale {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+  }
+
+  .header-logo {
+
+    height: 50%;
+    width: 75%;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 55%;
+    justify-content: center;
+  }
+
+  .menu div {
+    margin-bottom: 10px;
+  }
+
+  /* End header */
+
+  .formulaire select,
+  .formulaire input {
+    margin-top: 30px;
+    width: 70%;
+    height: 40px;
+  }
+
+
+
+
+
+
+
+  .bottom-reservation {
+
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: #1A2B48;
+    color: white;
+
+  }
+
+
+
+  /* footer */
+  .footer-left {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .footer-right a {
+    margin-top: 25px;
+  }
+
+
+  /* End footer */
+}
