@@ -73,6 +73,13 @@
     }
 
 
+    #bottom-reservation {
+        padding: 10px 15px;
+        top: 140px;
+        left: 30%;
+
+    }
+
 
     .services div {
         width: 80%;

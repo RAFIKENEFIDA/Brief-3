@@ -219,6 +219,10 @@ body {
     visibility: hidden;
 }
 
+#addition p {
+    color: white;
+}
+
 .modal-box {
     position: absolute;
     top: 50%;

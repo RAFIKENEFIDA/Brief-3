@@ -117,7 +117,8 @@ body {
 
 #test {
     text-align: center;
-    top: 20px;
+    font-size: 20px;
+    color: #1A2B48;
 }
 
 .formulaire {
@@ -130,12 +131,14 @@ body {
 }
 
 .formulaire select {
-    margin-top: 30px;
+    font-family: poppins;
+    margin-bottom: 20px;
     width: 30%;
     height: 40px;
 }
 
 .formulaire input {
+
     margin-top: 30px;
     width: 30%;
     height: 40px;

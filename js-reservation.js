@@ -68,20 +68,23 @@ function calcule() {
         case 1:
             var p = formulaire.carburant.selectedIndex;
             if (p == 0) break;
+            tarif = 10;
             if (p == 1) {
                 tarifcarburant = 0.05;
-                tarif = 10;
+
             } else {
                 tarifcarburant = 0.14;
+
             }
             break;
 
         case 2:
             var p = formulaire.carburant.selectedIndex;
             if (p == 0) break;
+            tarif = 14;
             if (p == 1) {
                 tarifcarburant = 0.09;
-                tarif = 14;
+
             } else if (p == 2) {
                 tarifcarburant = 0.14;
             } else {
@@ -92,9 +95,10 @@ function calcule() {
         case 3:
             var p = formulaire.carburant.selectedIndex;
             if (p == 0) break;
+            tarif = 12;
             if (p == 1) {
                 tarifcarburant = 0.05;
-                tarif = 12;
+
             } else if (p == 2) {
                 tarifcarburant = 0.09;
             } else {
@@ -105,9 +109,10 @@ function calcule() {
         case 4:
             var p = formulaire.carburant.selectedIndex;
             if (p == 0) break;
+            tarif = 20;
             if (p == 1) {
                 tarifcarburant = 0.09;
-                tarif = 20;
+
             } else if (p == 2) {
                 tarifcarburant = 0.14;
             } else {
