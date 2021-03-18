@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+
 /* header */
 .header-principale {
     font-size: 12px;
@@ -72,36 +73,127 @@ body {
     list-style: none;
 }
 
-.header {
-    height: 100px;
-    display: flex;
-    font-size: 17px;
-    padding: 5px 25px 0px 25px;
-    box-sizing: border-box;
+/* header */
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    padding: .9rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
 }
 
 .logo-principale {
-    height: 100%;
-    width: 25%;
+    width: 17%;
+    height: 75px;
 }
 
 .header-logo {
+    width: 100%;
     height: 100%;
-    width: 80%;
+
 }
 
-.menu {
+
+nav {
+    margin-right: 8%;
+    font-size: 18px;
+}
+
+nav ul {
     display: flex;
-    align-items: center;
-    height: 100%;
-    width: 65%;
-    flex-wrap: wrap;
 }
 
-.menu div {
-    color: black;
-    margin-left: 10%;
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    display: block;
+    margin: .6rem 0;
+    padding: .6rem 1.25rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media (max-width: 810px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 5%;
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: .6rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #42495B;
+    }
+
+    .menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 2.6rem;
+        font-size: 1.6rem;
+    }
+
+    .menu-toggle.active::before {
+        content: '\f00d';
+        font-size: 1.6rem;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+    }
+
+    nav ul li a {
+        margin: 0;
+        color: #42495B;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-left: 0px;
+    }
+
+    nav.active {
+
+        display: flex;
+
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active ul {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        color: #42495B;
+        text-align: center;
+        background-color: #F8F1F1;
+    }
+
 }
 
 /* End Header */

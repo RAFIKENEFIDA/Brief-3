@@ -51,19 +51,21 @@
 
 
     </div>
-    <div class="header">
+    <header>
         <div class="logo-principale">
            <img class="header-logo" src="icones/logo.png" alt="logo du site">
         </div>
-        <div class="menu">
-            <div class="header-acceuil"><a   href="index.html" >ACCEUIL</a></div>
-            <div  class="header-reservation"><a   href="reservation.html" >RESERVATION</a></div>
-            <div class="header-gallerie"><a  href="Gallerie.html" >GALLERIE</a></div>
-            <div class="header-contact"><a  href="Contact.html" >CONTACT</a></div>
+        <div class="menu-toggle"></div>
+        <nav>
+          <ul>
+            <li><a   href="index.html" >ACCEUIL</a></li>
+           <li><a   href="reservation.html" >RESERVATION</a></li>
+           <li> <a  href="Gallerie.html" >GALLERIE</a></li>
+            <li> <a  href="Contact.html" >CONTACT</a></li> 
+          </ul>
+        </nav>
         
-        </div>
-        
-            </div>
+    </header>
   </div> 
     <!-- End header -->
 
@@ -150,57 +152,63 @@
 <!-- end review -->
 
 
+ <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-left">
+        <div class="logo-footer">
 
+        <img  src="icones/logo2.png" alt="logo du site">
 
-  <!-- Footer -->
-  <footer class="footer">
-      <div class="footer-left">
-          <div class="logo-footer">
-
-          <img  src="icones/logo2.png" alt="logo du site">
-
-          </div>
-          <p style="font-size: 13px;"> l’expert de la location de véhicules courte et moyenne durée au Maroc, vous propose des offres de location de véhicule personnalisées, pour vos besoins personnels et professionnels.
-
-          DiRENT vous propose également la location des véhicules utilitaires, pour les courtes et moyennes durées en fonction de vos exigences, afin d’accompagner vos projets professionnels.
-
+        </div>
+      
+         <h5 style="color: white;">Follows Us</h5>
+          <div class="listes-social2">
              
-
-           .</p>
-           <h5 style="color: white;">Follows Us</h5>
-            <div class="listes-social2">
-               
-                    <a class="fb" href="#"target><img style="width: 25px;" style="height: 25px;" src="icones/facebook.png" alt="icone-facebook"></a>
-                    <a class="linkedin" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/linkedin.png" alt="icone-linkedin"></a>
-                    <a class="int" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/instagram.png" alt="icone-intagram"></a>
-                    <a class="twt" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/Twitter.png" alt="icone-twitter"></a>
-                
-                
-                </div>
-      </div>
-      <div class="footer-right">
-         
-            <a href="#" target="_blank" > Agence de location </a>
-         
-          
-            <a href="#" target="_blank" > Véhicules De location </a>
-           
-
-            <a href="#" target="_blank" > Nous contacter </a>
+                  <a class="fb" href="#"target><img style="width: 25px;" style="height: 25px;" src="icones/facebook.png" alt="icone-facebook"></a>
+                  <a class="linkedin" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/linkedin.png" alt="icone-linkedin"></a>
+                  <a class="int" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/instagram.png" alt="icone-instagram"></a>
+                  <a class="twt" href="#"target><img  style="width: 25px;" style="height: 25px;"src="icones/Twitter.png" alt="icone-twitter"></a>
+              
+              
+              </div>
+    </div>
+    <div class="footer-right">
+       
+          <a href="#" target="_blank" > Agence de location </a>
+       
         
-            <a href="#"  target="_blank"> Conditions Générales </a>
+          <a href="#" target="_blank" > Véhicules De location </a>
          
 
-      </div>
+          <a href="#" target="_blank" > Nous contacter </a>
+      
+          <a href="#"  target="_blank"> Conditions Générales </a>
+       
 
-    
-  </footer>
+    </div>
+
   
-  <div class="footer-bottom">
-    <p> © 2021 tous droits réservés</p>
-  </div>
+</footer>
 
-  </div>
+<div class="footer-bottom">
+  <p> © 2021 tous droits réservés</p>
+</div>
 
+</div>
+<script src="js-reservation.js"></script>
+
+<script src="https://kit.fontawesome.com/756f1fbb0c.js" crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $('.menu-toggle').click(function(){
+    $('.menu-toggle').toggleClass('active')
+    $('nav').toggleClass('active')
+  })
+})
+</script>
 </body>
 </html>

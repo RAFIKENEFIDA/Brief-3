@@ -8,43 +8,54 @@ function myliste() {
 
     var i = formulaire.vehicule.selectedIndex;
 
-    for (j = 1; j < 5; j++) formulaire.carburant.options[j].text = "";
+    for (j = 1; j < 5; j++)
+        formulaire.carburant.options[j].text = "";
 
+
+    formulaire.Boitevitesse.options[1].text = "";
 
 
     if (i == 0) {
         for (j = 1; j < 4; j++) formulaire.carburant.options[j].text = "";
+        formulaire.Boitevitesse.options[1].text = "";
 
     } else {
         switch (i) {
             case 1:
                 var v = new Array("Electrique", "Essence");
+
                 boitevitesse = 0;
 
                 break;
 
             case 2:
                 var v = new Array("Hybride", "Essence", "Diesel");
+                var B = new Array("Manuelle");
                 boitevitesse = 0;
                 break;
             case 3:
                 var v = new Array("Electrique", "Hybride", "Essence", "Diesel");
+                var B = new Array("Manuelle");
                 boitevitesse = 0;
                 break;
             case 4:
                 var v = new Array("Hybride", "Essence", "Diesel");
+                var B = new Array("Automatique");
                 boitevitesse = 0.19;
                 break;
             case 5:
                 var v = new Array("Diesel");
+                var B = new Array("Manuelle");
                 boitevitesse = 0;
                 break;
             case 6:
                 var v = new Array("Essence", "Diesel");
+                var B = new Array("Manuelle");
                 boitevitesse = 0;
                 break;
             case 7:
                 var v = new Array("Diesel");
+                var B = new Array("Automatique");
                 boitevitesse = 0.19;
                 break;
 
@@ -52,6 +63,10 @@ function myliste() {
 
         for (k = 0; k < v.length; k++)
             formulaire.carburant.options[k + 1].text = v[k];
+
+
+
+        formulaire.Boitevitesse.options[1].text = B[0];
     }
 
 
